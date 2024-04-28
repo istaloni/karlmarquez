@@ -1,0 +1,50 @@
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+
+h1, p {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0.1em;
+}
+
+p {
+    margin: 10px auto;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px; 
+    width: 60vw;
+    padding-bottom: 2em;
+}
+
+
+input, textarea, select {
+    width: 100%;
+}
+
+
+.radio-label, .checkbox-label {
+    display: inline-block
+}
+
+.gender-label {
+    margin-bottom: -0.5rem;
+}
