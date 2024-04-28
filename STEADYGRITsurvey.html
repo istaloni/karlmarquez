@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>STEADYGRIT</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="CSS SteadyGrit.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1 id="title">STEADYGRIT Survey Form</h1>
+        <p id="description">Thank you for enabling bigger ideas</p>
+        <form id="survey-form">
+            <fieldset>
+                <legend>Primary Information</legend>
+                <label for="name">Name: 
+                    <input name="name" id="name" type="text" required placeholder="Karl Marquez"/> 
+                </label>
+                <label for="email">Email: 
+                  <input name="email" id="email" type="email" required placeholder="karl@gmail.com"/>
+                </label>
+                <label for="age">Age:
+                  <input name="age" id="age" type="number" min="7" max="100" placeholder="25"/> 
+                </label>
+                <label for="gender" class="gender-label">Gender: </label>
+                <label for="gender-male" class="radio-label">
+                    <input name="gender" type="radio" id="gender-male" value="gender-male" checked/>
+                    Male
+                </label>
+                <label for="gender-female" class="radio-label">
+                    <input name="gender" type="radio" id="gender-female" value="gender-female"/>
+                    Female
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Tell me more about yourself</legend>
+                <label for="occupation-label">Select your occupation: 
+                    <select name="occupation" id="occupation">
+                        <option value="">Select one</option>
+                        <option value="student">Student</option>
+                        <option value="professional">Professional</option>
+                        <option value="prefernottosay">Prefer not to say</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend> Select which topics/content do you want to see more: </legend>
+                <label for="biological-science" class="checkbox-label">
+                    <input id="biological-science" type="checkbox" name="biological-science" checked value="biological-science"/> Biological Science
+                </label>
+                <label for="current-events" class="checkbox-label">
+                    <input id="current-events" type="checkbox" name="current-events" value="current-events"/> Current events
+                </label>
+                <label for="stockmarket" class="checkbox-label">
+                    <input id="stockmarket" type="checkbox" name="stockmarket" value="stockmarket"/> Stockmarket
+                </label>
+                <label for="sports" class="checkbox-label">
+                    <input id="sports" type="checkbox" name="sports" value="sports"/> Sports
+                </label>
+                <label for="comments"> Any comments or suggestions?
+                    <textarea name="comments" id="comments" rows="3" cols="30" placeholder="More boba please..."></textarea>
+                </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit"/>
+        </form>
+    </body>
+</html>
