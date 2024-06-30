@@ -1,0 +1,35 @@
+#main {
+    background-color: #b6afa4;
+}
+
+#title {
+    text-align: center;
+    padding: 1px;
+    background-color: bisque;
+    color: black;
+    border-bottom: 4px solid #fdb347;
+}
+
+#img-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px
+}
+
+#img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+#img-caption {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
