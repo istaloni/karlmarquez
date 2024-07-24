@@ -26,7 +26,7 @@ body {
 }
 
 .resume_wrapper .resume_left {
-    width: 35%;
+    width: 32%;
     background: #26252d;
 }
 
@@ -100,7 +100,7 @@ body {
 
 .resume_wrapper .resume_left .resume_skills .skills_list .skills_bar p {
     position: relative;
-    width: 100px;
+    width: 75px;
     height: 20px;
     background: #fff;
 }
@@ -116,7 +116,7 @@ body {
 
 
 .resume_wrapper .resume_right {
-    width: 65%;
+    width: 70%;
     padding: 20px 40px;
 }
 
@@ -149,7 +149,7 @@ body {
 .resume_wrapper .resume_right .resume_data .content {
     padding-left: 35px;
     margin-bottom: 20px;
-    width: calc(100% - 115px)
+    width: calc(100% - 115px);
 }
 
 .resume_wrapper .resume_right .resume_data .year:before {
@@ -237,9 +237,6 @@ body {
         font-size: 24px;
     }
 }
-
-
-
 
 
 
