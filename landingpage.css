@@ -1,0 +1,28 @@
+body {
+    background-color: #F5EFE7;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.firstdiv {
+    height: 300px;
+    background-color: #213555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.firstdivleft {
+    margin: 25px;
+}
+
+img {
+    width: 200px;
+}
+
+.firstdivright {
+    display: flex;
+}
