@@ -21,6 +21,11 @@ body {
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
-    gap: 5px;
+    gap: 10px;
     flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: #f5efe7;
 }
