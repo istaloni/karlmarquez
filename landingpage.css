@@ -1,5 +1,6 @@
 body {
-    background-color: #F5EFE7;
+    background-color: #f5efe7;
+    box-sizing: border-box;
 }
 
 .body {
@@ -7,22 +8,19 @@ body {
     flex-direction: column;
 }
 
-.firstdiv {
-    height: 300px;
-    background-color: #213555;
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #213555;
+    color: #f5efe7;
+    padding: 10px;
 }
 
-.firstdivleft {
-    margin: 25px;
-}
-
-img {
-    width: 200px;
-}
-
-.firstdivright {
+.navbarrightul {
     display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    gap: 5px;
+    flex-wrap: wrap;
 }
