@@ -18,7 +18,6 @@ body {
     background-color: #213555;
     color: #f5efe7;
     padding: 10px;
-    box-shadow: 1px 1px 4px 5px #D8C4B6;
 }
 
 .nadineandme {
@@ -37,4 +36,10 @@ body {
 a {
     text-decoration: none;
     color: #f5efe7;
+}
+
+.home {
+    height: 500px;
+    background-color: #D8C4B6;
+    padding: 10px;
 }
