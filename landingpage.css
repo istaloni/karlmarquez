@@ -31,12 +31,18 @@ body {
     justify-content: space-evenly;
     gap: 7.5px;
     flex-wrap: wrap;
+    background-color: #213555;
 }
 
 a {
     text-decoration: none;
     color: #f5efe7;
 }
+
+li a:hover {
+    background-color: #3e5879;
+}
+
 
 .home {
     background-color: #D8C4B6;
