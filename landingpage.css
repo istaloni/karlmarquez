@@ -47,21 +47,20 @@ li a:hover {
 .home {
     background-color: #D8C4B6;
     padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .homeh1 {
-    color: #213555
+    color: #213555;
+    text-align: center;
 }
 
 .homegolf {
     width: 30%;
     filter: opacity(75%);
     border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .homep {
