@@ -48,13 +48,21 @@ li a:hover {
     background-color: #D8C4B6;
     padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.homegolf {
+.homeleft {
     width: 50%;
-    height: 50%;
+}
+
+
+.homeright {
+    width: 50%;
+}
+
+.homegolf {
+    width: 100%;
     filter: opacity(75%);
     border-radius: 10%;
 }
