@@ -39,7 +39,16 @@ a {
 }
 
 .home {
-    height: 500px;
     background-color: #D8C4B6;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homegolf {
+    width: 50%;
+    height: 50%;
+    filter: opacity(75%);
+    border-radius: 10%;
 }
