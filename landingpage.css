@@ -91,6 +91,10 @@ li a:hover {
     border-radius: 10px;
 }
 
+.project:hover {
+    background-color: #3e5879;
+}
+
 .projectimage {
     max-width: 200px;
     border-radius: 10px;
@@ -100,3 +104,4 @@ li a:hover {
     text-align: center;
     color: #213555;
 }
+
