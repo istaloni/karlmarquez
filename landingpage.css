@@ -69,6 +69,12 @@ li a:hover {
     text-align: center;
 }
 
+.projecttitle {
+    background-color: #213555;
+    display: block;
+    text-align: center;
+    color:#D8C4B6
+}
 
 .projects {
     background-color: #213555;
@@ -77,6 +83,7 @@ li a:hover {
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
+    padding-top: 0px;
     gap: 20px;
 }
 
