@@ -112,3 +112,23 @@ li a:hover {
     color: #213555;
 }
 
+.skills {
+    background-color: #D8C4B6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #213555
+}
+
+/*.footer {
+    background-color: #213555;
+    color: #D8C4B6;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
