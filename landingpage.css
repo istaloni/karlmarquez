@@ -136,5 +136,15 @@ li a:hover {
 .footericons {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+
+a:hover {
+    background-color: #3e5879;
+}
+
+i {
+    font-size: 2rem;
 }
