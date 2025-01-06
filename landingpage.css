@@ -132,3 +132,9 @@ li a:hover {
     padding: 10px;
     gap: 10px;
 }
+
+.footericons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
