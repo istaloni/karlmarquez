@@ -47,26 +47,60 @@ li a:hover {
 .home {
     background-color: #D8C4B6;
     padding: 10px;
-    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.homedivleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .homeh1 {
     color: #213555;
-    text-align: center;
 }
 
 .homegolf {
     width: 300px;
     filter: opacity(75%);
     border-radius: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
 }
 
 .homep {
     color: #213555;
-    text-align: center;
+}
+
+.homedivright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.datetime {
+    font-size: 10px;
+    padding: 12px;
+    background-color: #213555;
+    color: #D8C4B6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border-right: 10px #3e5879 solid;
+    width: 200px;
+}
+
+.time {
+    font-size: 3em;
+}
+
+.date {
+    margin-top: 12px;
+    font-size: 1.75em;
 }
 
 .projecttitle {
@@ -149,29 +183,3 @@ i {
     font-size: 2rem;
 }
 
-.datetimesection {
-    background-color: #D8C4B6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.datetime {
-    font-size: 16px;
-    padding: 24px;
-    background-color: #213555;
-    color: #D8C4B6;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
-    border-right: 10px #3e5879 solid;
-    width: 400px;
-}
-
-.time {
-    font-size: 3em;
-}
-
-.date {
-    margin-top: 12px;
-    font-size: 1.75em;
-}
