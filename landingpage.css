@@ -13,7 +13,7 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #213555;
     color: #f5efe7;
@@ -53,7 +53,7 @@ li a:hover {
     flex-wrap: wrap;
 }
 
-.homedivleft {
+.homediv {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,7 +76,7 @@ li a:hover {
     color: #213555;
 }
 
-.homedivright {
+.navbartime {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,22 +84,22 @@ li a:hover {
 }
 
 .datetime {
-    font-size: 10px;
-    padding: 12px;
+    font-size: 8px;
+    padding: 10px;
     background-color: #213555;
     color: #D8C4B6;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     border-right: 10px #3e5879 solid;
-    width: 250px;
+    width: 150px;
 }
 
 .time {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .date {
-    margin-top: 12px;
+    margin-top: 5px;
     font-size: 1.75em;
 }
 
