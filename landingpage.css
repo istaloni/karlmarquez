@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f5efe7;
     box-sizing: border-box;
@@ -9,6 +15,8 @@ body {
 .body {
     display: flex;
     flex-direction: column;
+    padding: 0px;
+    width: 100%; 
 }
 
 .navbar {
@@ -18,6 +26,9 @@ body {
     background-color: #213555;
     color: #f5efe7;
     padding: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    position: relative;
 }
 
 .nadineandme {
@@ -29,18 +40,23 @@ body {
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
-    gap: 7.5px;
+    gap: 0px;
     flex-wrap: wrap;
     background-color: #213555;
 }
 
-a {
+.navbarrightul li a {
+    display: inline-block;
     text-decoration: none;
     color: #f5efe7;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-li a:hover {
+.navbarrightul li a:hover {
     background-color: #3e5879;
+    transform: scale(1.1);
 }
 
 
@@ -51,6 +67,9 @@ li a:hover {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    z-index: 80;
+    position: relative;
 }
 
 .homediv {
@@ -60,6 +79,7 @@ li a:hover {
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+    padding: 1.5em;
 }
 
 .homeh1 {
@@ -107,7 +127,11 @@ li a:hover {
     background-color: #213555;
     display: block;
     text-align: center;
-    color:#D8C4B6
+    color:#D8C4B6;
+    padding: 1.5em;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    z-index: 60px;
+    position: relative;
 }
 
 .projects {
@@ -116,28 +140,30 @@ li a:hover {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px;
-    padding-top: 0px;
+    padding: 1.5em;
     gap: 20px;
 }
 
 .project {
     background-color: #D8C4B6;
-    padding: 10px;
+    padding: 0.5em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     max-width: 200px;
     border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    height: auto;
 }
 
 .project:hover {
-    background-color: #3e5879;
+    background-color: #B89E8C;
+    transform: scale(1.1);
 }
 
 .projectimage {
-    max-width: 200px;
+    max-width: 100%;
     border-radius: 10px;
 }
 
@@ -152,7 +178,11 @@ li a:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    color: #213555
+    color: #213555;
+    padding: 1.5em;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    z-index: 10px;
+    position: relative;
 }
 
 .footer {
@@ -163,7 +193,7 @@ li a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 1.5em;
     gap: 10px;
 }
 
@@ -173,13 +203,26 @@ li a:hover {
     justify-content: space-evenly;
     align-items: center;
     gap: 50px;
+    padding: 1.5em
 }
 
-i:hover {
-    background-color: #3e5879;
+.footericons a {
+    color: #D8C4B6;
+    margin: 0 10px; 
+    font-size: 24px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.footericons a:hover {
+    border-radius: 10px;
+    transform: scale(1.2);
 }
 
 i {
     font-size: 2rem;
 }
 
+.footerinfo {
+    font-size: 1em;
+    color: #ccc;
+}
