@@ -86,7 +86,7 @@ body {
     padding: 2em;
     height: auto;
     background-color: #213555;
-    border-radius: 100px;
+    border-radius: 10px;
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -103,7 +103,7 @@ body {
     height: 25em;
     width: auto;
     filter: opacity(75%);
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 .homep {
