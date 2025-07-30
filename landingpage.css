@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: #f5efe7;
     box-sizing: border-box;
@@ -62,7 +66,7 @@ body {
 
 .home {
     background-color: #D8C4B6;
-    padding: 10px;
+    padding: 3em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -79,21 +83,31 @@ body {
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    padding: 1.5em;
+    padding: 2em;
+    height: auto;
+    background-color: #213555;
+    border-radius: 100px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.homediv:hover {
+    background-color: #213555;
+    transform: scale(1.1);
 }
 
 .homeh1 {
-    color: #213555;
+    color: #D8C4B6;
 }
 
 .homegolf {
-    width: 300px;
+    height: 25em;
+    width: auto;
     filter: opacity(75%);
     border-radius: 5%;
 }
 
 .homep {
-    color: #213555;
+    color: #D8C4B6;
 }
 
 .navbartime {
