@@ -92,7 +92,7 @@ body {
 
 .homediv:hover {
     background-color: #213555;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .homeh1 {
