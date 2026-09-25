@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karl Marquez</title>
+    
+    <!-- CSS Stylesheets -->
     <link href="landingpage.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/jpg" href="/images/favicon.jpg">
-    <script src="https://kit.fontawesome.com/ab31a23f88.js" crossorigin="anonymous"></script>
+    
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- JavaScript -->
     <script src="landingpage.js" defer></script>
 </head>
 <body>
-    <div class="body">
-        <div class="navbar">
-            <div class="navbarleft">
-                <img class="nadineandme" src="./images/nadine.jpg" alt="nadine and me"> 
-            </div>
-            <div class="navbarcenter">
-                <div class="navbartime">
-                    <div class="datetime">
-                        <div class="time"></div>
-                        <div class="date"></div>
-                    </div>
-                </div>
 
-            </div>
-            <div class="navbarright">
-                <ul class="navbarrightul">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="./Resume/HTML CSS Resume.html">Resume</a></li>
-                </ul>
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="navbarleft">
+            <img class="nadineandme" src="images/nadine.jpg" alt="Karl and Nadine"> 
+        </div>
+        <div class="navbarcenter">
+            <div class="navbartime">
+                <div class="datetime">
+                    <div class="time"></div>
+                    <div class="date"></div>
+                </div>
             </div>
         </div>
+        <nav class="navbarright">
+            <ul class="navbarrightul">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="./Resume/HTML CSS Resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="home">
-
+    <main class="main-content">
+        <!-- Main Hub Navigation Cards -->
+        <section class="home">
             <div class="homediv">
                 <a class="blogposts" href="https://istaloni.github.io/data-insights/">
                     <h1 class="homeh1">Blog Posts</h1>
@@ -51,7 +59,7 @@
             <div class="homediv">
                 <a class="blogposts" href="https://istaloni.github.io/PharmTech/">
                     <h1 class="homeh1">PharmTech</h1>
-                    <img class="homegolf" src="images/drugs.jpg" alt="medical drugs">
+                    <img class="homegolf" src="images/drugs.jpg" alt="Medical drugs">
                     <p class="homep">Reviewer for PTCB exam</p>
                 </a>
             </div>
@@ -59,72 +67,76 @@
             <div class="homediv">
                 <a class="blogposts" href="https://istaloni.github.io/ClinicalReportingBlog/">
                     <h1 class="homeh1">Clinical Reports</h1>
-                    <img class="homegolf" src="images/kaplanmeier.jpg" alt="medical drugs">
+                    <img class="homegolf" src="images/kaplanmeier.jpg" alt="Kaplan-Meier Survival Analysis">
                     <p class="homep">CDISC standards and Pharmaverse</p>
                 </a>
             </div>
-            
-        </div>
+        </section>
 
-        <div class="projecttitle">
-            <h1>My take on things..</h1>
+        <!-- Projects Section -->
+        <section class="projecttitle" id="projects">
+            <h1>Featured Projects</h1>
             <div class="projects">
-                <div class="project">
-                    <a href="https://rpubs.com/karl4marquez/MedicalCostPrediction">
-                        <img class="projectimage" src="/images/medicalcost.jpg" alt="ambulance">
+                <figure class="project">
+                    <a href="https://rpubs.com/karl4marquez/MedicalCostPrediction" target="_blank" rel="noopener noreferrer">
+                        <img class="projectimage" src="images/medicalcost.jpg" alt="Medical cost prediction graph">
                     </a>
                     <figcaption class="projectcaption">Medical cost prediction analysis among certain demographics</figcaption>
-                </div>
+                </figure>
 
-                <div class="project">
-                    <a href="https://karlmarquez.shinyapps.io/covid/">
-                        <img class="projectimage" src="/images/covid.jpg" alt="Covid19">
+                <figure class="project">
+                    <a href="https://karlmarquez.shinyapps.io/covid/" target="_blank" rel="noopener noreferrer">
+                        <img class="projectimage" src="images/covid.jpg" alt="Covid-19 Dashboard banner">
                     </a>
                     <figcaption class="projectcaption">Covid-19 Dashboard</figcaption>
-                </div>
+                </figure>
 
-                <div class="project">
-                    <a href="https://karlmarquez.shinyapps.io/ASPR_Locator/">
-                        <img class="projectimage" src="/images/vaccinemap.JPG" alt="vaccine map">
+                <figure class="project">
+                    <a href="https://karlmarquez.shinyapps.io/ASPR_Locator/" target="_blank" rel="noopener noreferrer">
+                        <img class="projectimage" src="images/vaccinemap.JPG" alt="Flu and Covid vaccine locator map">
                     </a>
                     <figcaption class="projectcaption">Flu and Covid-19 Vaccine Locator</figcaption>
-                </div>
+                </figure>
             </div>
-        </div>
+        </section>
 
-        <div class="skills">
+        <!-- Skills and Certifications Section -->
+        <section class="skills" id="skills">
             <div class="skillstitle">
-                <h1>Skills and Certs</h1>
+                <h1>Skills & Certifications</h1>
             </div>
             <div class="skillscertification">
-
+                <!-- Credly Badge Embed Container -->
+                <div class="badge-container">
+                    <div 
+                        data-iframe-width="150" 
+                        data-iframe-height="270" 
+                        data-share-badge-id="YOUR-BADGE-ID" 
+                        data-share-badge-host="https://www.credly.com">
+                    </div>
+                    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                </div>
             </div>
-        </div>
+        </section>
+    </main>
 
-    </div>
-
-
-    <div class="footer">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="footericons">
-            <a href="https://www.linkedin.com/in/karl4marquez/">
+            <a href="https://www.linkedin.com/in/karl4marquez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a href="#">
+            <a href="#" aria-label="Instagram">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://github.com/istaloni">
+            <a href="https://github.com/istaloni" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <i class="fa-brands fa-github"></i>
             </a>
         </div>
         <div class="footerinfo">
-            <footer>Karl Marquez © 2025</footer>
+            <p>Karl Marquez © 2026</p>
         </div>
-    </div>
-
-    
-
-
+    </footer>
 
 </body>
 </html>
-
