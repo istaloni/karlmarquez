@@ -169,6 +169,53 @@ body {
 }
 
 /* ==========================================
+   Hero Banner
+   ========================================== */
+   .hero-banner {
+    background-color: #213555;
+    color: #D8C4B6;
+    padding: 4em 2em;
+    text-align: center;
+    border-bottom: 2px solid #3e5879;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    z-index: 90;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.hero-title {
+    font-family: 'Asul', serif;
+    font-size: 2.8rem;
+    color: #f5efe7;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #D8C4B6;
+    line-height: 1.6;
+    max-width: 650px;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+
+/* ==========================================
    Projects Section
    ========================================== */
 .projecttitle {
