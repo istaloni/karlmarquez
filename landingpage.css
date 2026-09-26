@@ -250,12 +250,12 @@ body {
    Skills & Certifications
    ========================================== */
 .skills {
-    background-color: var(--color-tan);
+    background-color: var(--color-navy);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--color-navy);
+    color: var(--color-tan);
     padding: 3em 1.5em;
     box-shadow: var(--shadow-soft);
     z-index: 10;
@@ -276,7 +276,7 @@ body {
 }
 
 .badge-container {
-    background-color: var(--color-bg);
+    background-color: var(--color-white);
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
