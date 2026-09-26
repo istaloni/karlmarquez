@@ -1,3 +1,17 @@
+/* ==========================================
+   Design Tokens
+   ========================================== */
+   :root {
+    --color-bg: #f5efe7;
+    --color-navy: #213555;
+    --color-navy-light: #3e5879;
+    --color-tan: #D8C4B6;
+    --color-white: #ffffff;
+    --shadow-soft: 0 6px 12px rgba(0, 0, 0, 0.25);
+    --font-heading: 'Asul', serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
 /* Modern Reset */
 * {
     margin: 0;
@@ -10,19 +24,36 @@ a {
     color: inherit;
 }
 
+/* Visible keyboard focus, no mouse-click outline noise */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--color-navy-light);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
 body {
-    background-color: #f5efe7;
-    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-bg);
+    font-family: var(--font-body);
     font-weight: 400;
     font-style: normal;
-    color: #213555;
+    color: var(--color-navy);
     line-height: 1.5;
 }
 
 .main-content {
     display: flex;
     flex-direction: column;
-    width: 100%; 
+    width: 100%;
+}
+
+/* Respect users who've asked for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
 }
 
 /* ==========================================
@@ -32,10 +63,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #213555;
-    color: #f5efe7;
+    background-color: var(--color-navy);
+    color: var(--color-bg);
     padding: 15px 5%;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--shadow-soft);
     z-index: 100;
     position: relative;
     flex-wrap: wrap;
@@ -47,7 +78,7 @@ body {
     height: 80px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid #D8C4B6;
+    border: 2px solid var(--color-tan);
 }
 
 .navbartime {
@@ -60,11 +91,11 @@ body {
 .datetime {
     font-size: 8px;
     padding: 10px;
-    background-color: #213555;
-    color: #D8C4B6;
+    background-color: var(--color-navy);
+    color: var(--color-tan);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
-    border-right: 8px solid #3e5879;
+    border-right: 8px solid var(--color-navy-light);
     width: 150px;
     text-align: center;
 }
@@ -90,7 +121,7 @@ body {
 
 .navbarrightul li a {
     display: inline-block;
-    color: #f5efe7;
+    color: var(--color-bg);
     padding: 0.5em 1em;
     border-radius: 5px;
     font-weight: 500;
@@ -98,7 +129,7 @@ body {
 }
 
 .navbarrightul li a:hover {
-    background-color: #3e5879;
+    background-color: var(--color-navy-light);
     transform: translateY(-2px);
 }
 
@@ -106,14 +137,14 @@ body {
    Main Cards / Landing Section
    ========================================== */
 .home {
-    background-color: #D8C4B6;
+    background-color: var(--color-tan);
     padding: 3em 2em;
     display: flex;
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
     gap: 2rem;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--shadow-soft);
     z-index: 80;
     position: relative;
 }
@@ -123,7 +154,7 @@ body {
     flex-direction: column;
     flex: 1 1 280px;
     max-width: 360px;
-    background-color: #213555;
+    background-color: var(--color-navy);
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
@@ -145,9 +176,10 @@ body {
 }
 
 .homeh1 {
-    color: #D8C4B6;
+    color: var(--color-tan);
     font-size: 1.5rem;
-    font-family: 'Asul', serif;
+    font-family: var(--font-heading);
+    font-weight: 700;
 }
 
 .homegolf {
@@ -164,20 +196,20 @@ body {
 }
 
 .homep {
-    color: #D8C4B6;
+    color: var(--color-tan);
     font-size: 0.95rem;
 }
 
 /* ==========================================
    Hero Banner
    ========================================== */
-   .hero-banner {
-    background-color: #213555;
-    color: #D8C4B6;
+.hero-banner {
+    background-color: var(--color-navy);
+    color: var(--color-tan);
     padding: 4em 2em;
     text-align: center;
-    border-bottom: 2px solid #3e5879;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    border-bottom: 2px solid var(--color-navy-light);
+    box-shadow: var(--shadow-soft);
     z-index: 90;
     position: relative;
 }
@@ -192,14 +224,14 @@ body {
 }
 
 .hero-title {
-    font-family: 'Asul', serif;
+    font-family: var(--font-heading);
     font-size: 2.8rem;
-    color: #f5efe7;
+    color: var(--color-bg);
 }
 
 .hero-subtitle {
     font-size: 1.2rem;
-    color: #D8C4B6;
+    color: var(--color-tan);
     line-height: 1.6;
     max-width: 650px;
 }
@@ -208,90 +240,30 @@ body {
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1rem;
     }
-}
-
-
-/* ==========================================
-   Projects Section
-   ========================================== */
-.projecttitle {
-    background-color: #213555;
-    text-align: center;
-    color: #D8C4B6;
-    padding: 3em 1.5em;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-    z-index: 60;
-    position: relative;
-}
-
-.projecttitle h1 {
-    font-family: 'Asul', serif;
-    margin-bottom: 1.5em;
-    font-size: 2rem;
-}
-
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    gap: 25px;
-}
-
-.project {
-    background-color: #D8C4B6;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1 1 220px;
-    max-width: 280px;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.project:hover {
-    background-color: #B89E8C;
-    transform: translateY(-5px);
-}
-
-.projectimage {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.projectcaption {
-    text-align: center;
-    color: #213555;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    font-weight: 500;
 }
 
 /* ==========================================
    Skills & Certifications
    ========================================== */
 .skills {
-    background-color: #D8C4B6;
+    background-color: var(--color-tan);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #213555;
+    color: var(--color-navy);
     padding: 3em 1.5em;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--shadow-soft);
     z-index: 10;
     position: relative;
 }
 
-.skillstitle h1 {
-    font-family: 'Asul', serif;
+.skillstitle h2 {
+    font-family: var(--font-heading);
     font-size: 2rem;
     margin-bottom: 1.5rem;
 }
@@ -304,7 +276,7 @@ body {
 }
 
 .badge-container {
-    background-color: #ffffff;
+    background-color: var(--color-bg);
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -319,8 +291,8 @@ body {
    Footer
    ========================================== */
 .footer {
-    background-color: #213555;
-    color: #D8C4B6;
+    background-color: var(--color-navy);
+    color: var(--color-tan);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -336,19 +308,20 @@ body {
 }
 
 .footericons a {
-    color: #D8C4B6;
+    color: var(--color-tan);
     font-size: 1.8rem;
+    line-height: 0;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footericons a:hover {
-    color: #ffffff;
+    color: var(--color-white);
     transform: scale(1.2);
 }
 
 .footerinfo p {
     font-size: 0.9rem;
-    color: #D8C4B6;
+    color: var(--color-tan);
     opacity: 0.8;
 }
 

@@ -3,21 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karl Marquez</title>
-    
-    <!-- CSS Stylesheets -->
-    <link href="landingpage.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
+
+    <!-- Preconnects first: these should resolve before anything else -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Karl Marquez — Data, Pharma & Clinical Insights</title>
+    <meta name="description" content="Karl Marquez — this is where my work lives. Blog posts, PharmTech PTCB reviewer content, clinical reporting standards, and featured data projects.">
+    <meta name="author" content="Karl Marquez">
+    <link rel="canonical" href="https://karlmarquez.example.com/">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Karl Marquez">
+    <meta property="og:description" content="This is where my work lives. Blog posts, PharmTech PTCB reviewer content, clinical reporting standards, and featured data projects.">
+    <meta property="og:image" content="images/nadine.jpg">
+    <meta property="og:url" content="https://karlmarquez.example.com/">
+    <meta name="twitter:card" content="summary">
+
+    <!-- CSS -->
+    <link href="landingpage.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <!-- Favicon & Icons -->
+
+    <!-- Favicon -->
     <link rel="icon" type="image/jpg" href="images/favicon.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- JavaScript -->
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Karl Marquez",
+        "url": "https://karlmarquez.example.com/",
+        "sameAs": [
+            "https://www.linkedin.com/in/karl4marquez/",
+            "https://github.com/istaloni"
+        ]
+    }
+    </script>
+
     <script src="landingpage.js" defer></script>
 </head>
 <body>
@@ -25,7 +49,7 @@
     <!-- Header Navigation -->
     <header class="navbar">
         <div class="navbarleft">
-            <img class="nadineandme" src="images/nadine.jpg" alt="Karl and Nadine"> 
+            <img class="nadineandme" src="images/nadine.jpg" alt="Karl and Nadine" width="80" height="80">
         </div>
         <div class="navbarcenter">
             <div class="navbartime">
@@ -35,7 +59,7 @@
                 </div>
             </div>
         </div>
-        <nav class="navbarright">
+        <nav class="navbarright" aria-label="Primary">
             <ul class="navbarrightul">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -49,76 +73,65 @@
         <!-- Hero Banner -->
         <section class="hero-banner" id="about">
             <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm Karl Marquez</h1>
+                <h1 class="hero-title">Karl Marquez</h1>
                 <p class="hero-subtitle">
-                    Just trying to learn a little everything everyday.
+                    This is where my work lives.
                 </p>
             </div>
         </section>
+
         <!-- Main Hub Navigation Cards -->
-        <section class="home">
+        <section class="home" id="projects" aria-label="Content hubs">
             <div class="homediv">
                 <a class="blogposts" href="https://istaloni.github.io/data-insights/">
-                    <h1 class="homeh1">Blog Posts</h1>
-                    <img class="homegolf" src="images/karlgolf.jpg" alt="Karl playing golf">
+                    <h2 class="homeh1">Blog Posts</h2>
+                    <img class="homegolf" src="images/karlgolf.jpg" alt="Karl playing golf" width="400" height="220" loading="lazy" decoding="async">
                     <p class="homep">My take on things...</p>
                 </a>
             </div>
 
             <div class="homediv">
                 <a class="blogposts" href="https://istaloni.github.io/PharmTech/">
-                    <h1 class="homeh1">PharmTech</h1>
-                    <img class="homegolf" src="images/drugs.jpg" alt="Medical drugs">
+                    <h2 class="homeh1">PharmTech</h2>
+                    <img class="homegolf" src="images/drugs.jpg" alt="Medical drugs" width="400" height="220" loading="lazy" decoding="async">
                     <p class="homep">Reviewer for PTCB exam</p>
                 </a>
             </div>
 
             <div class="homediv">
                 <a class="blogposts" href="https://istaloni.github.io/ClinicalReportingBlog/">
-                    <h1 class="homeh1">Clinical Reports</h1>
-                    <img class="homegolf" src="images/kaplanmeier.jpg" alt="Kaplan-Meier Survival Analysis">
+                    <h2 class="homeh1">Clinical Reports</h2>
+                    <img class="homegolf" src="images/kaplanmeier.jpg" alt="Kaplan-Meier Survival Analysis" width="400" height="220" loading="lazy" decoding="async">
                     <p class="homep">CDISC standards and Pharmaverse</p>
                 </a>
             </div>
-        </section>
 
-        <!-- Projects Section -->
-        <section class="projecttitle" id="projects">
-            <h1>Featured Projects</h1>
-            <div class="projects">
-                <figure class="project">
-                    <a href="https://rpubs.com/karl4marquez/MedicalCostPrediction" target="_blank" rel="noopener noreferrer">
-                        <img class="projectimage" src="images/medicalcost.jpg" alt="Medical cost prediction graph">
-                    </a>
-                    <figcaption class="projectcaption">Medical cost prediction analysis among certain demographics</figcaption>
-                </figure>
+            <div class="homediv">
+                <a class="blogposts" href="https://karlmarquez.shinyapps.io/covid/" target="_blank" rel="noopener noreferrer">
+                    <h2 class="homeh1">Covid-19 Dashboard</h2>
+                    <img class="homegolf" src="images/covid.jpg" alt="Covid-19 Dashboard banner" width="400" height="220" loading="lazy" decoding="async">
+                    <p class="homep">Tracking the numbers as they moved</p>
+                </a>
+            </div>
 
-                <figure class="project">
-                    <a href="https://karlmarquez.shinyapps.io/covid/" target="_blank" rel="noopener noreferrer">
-                        <img class="projectimage" src="images/covid.jpg" alt="Covid-19 Dashboard banner">
-                    </a>
-                    <figcaption class="projectcaption">Covid-19 Dashboard</figcaption>
-                </figure>
-
-                <figure class="project">
-                    <a href="https://karlmarquez.shinyapps.io/ASPR_Locator/" target="_blank" rel="noopener noreferrer">
-                        <img class="projectimage" src="images/vaccinemap.JPG" alt="Flu and Covid vaccine locator map">
-                    </a>
-                    <figcaption class="projectcaption">Flu and Covid-19 Vaccine Locator</figcaption>
-                </figure>
+            <div class="homediv">
+                <a class="blogposts" href="https://karlmarquez.shinyapps.io/ASPR_Locator/" target="_blank" rel="noopener noreferrer">
+                    <h2 class="homeh1">Vaccine Locator</h2>
+                    <img class="homegolf" src="images/vaccinemap.JPG" alt="Flu and Covid vaccine locator map" width="400" height="220" loading="lazy" decoding="async">
+                    <p class="homep">Flu and Covid-19 shots, mapped out</p>
+                </a>
             </div>
         </section>
 
         <!-- Skills and Certifications Section -->
         <section class="skills" id="skills">
             <div class="skillstitle">
-                <h1>Skills & Certifications</h1>
+                <h2>Skills & Certifications</h2>
             </div>
             <div class="skillscertification">
                 <!-- Credly Badge Embed Container -->
                 <div class="badge-container">
                     <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="b7a2aa33-0d8d-4692-8084-1be222dd564a" data-share-badge-host="https://www.credly.com"></div>
-                    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
                 </div>
             </div>
         </section>
@@ -128,19 +141,19 @@
     <footer class="footer">
         <div class="footericons">
             <a href="https://www.linkedin.com/in/karl4marquez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="#" aria-label="Instagram">
-                <i class="fa-brands fa-instagram"></i>
+                <svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
             </a>
             <a href="https://github.com/istaloni" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <i class="fa-brands fa-github"></i>
+                <svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M12 0a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.82 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.02 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 0z"/></svg>
             </a>
         </div>
         <div class="footerinfo">
             <p>Karl Marquez © 2026</p>
         </div>
     </footer>
+
+    <!-- Credly embed script: loaded after content, non-blocking -->
+    <script src="https://cdn.credly.com/assets/utilities/embed.js" async defer></script>
 
 </body>
 </html>
