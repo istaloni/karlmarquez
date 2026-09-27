@@ -256,6 +256,7 @@ body {
     max-width: 1100px;
     height: 480px;
     margin-top: 2.5rem;
+    margin-bottom: 3em;
     overflow: hidden;
     border-radius: 12px 12px 0 0;
 }
@@ -295,6 +296,7 @@ body {
     .hero-triptych {
         height: 380px;
         margin-top: 1.8rem;
+        margin-bottom: 2em;
     }
 }
 
