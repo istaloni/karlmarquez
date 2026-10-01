@@ -73,12 +73,52 @@ body {
     gap: 15px;
 }
 
-.nadineandme {
+/* Brand: photo + name wordmark */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--color-bg);
+    text-decoration: none;
+}
+
+.brand-photo {
     width: 80px;
     height: 80px;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid var(--color-tan);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.brand:hover .brand-photo {
+    transform: scale(1.05);
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+    text-align: left;
+}
+
+.brand-name {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-bg);
+    letter-spacing: 0.01em;
+}
+
+.brand-tagline {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-tan);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 4px;
 }
 
 .navbartime {
